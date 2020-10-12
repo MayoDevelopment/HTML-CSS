@@ -19,7 +19,8 @@ body {
 /* Style the top navigation bar */
 
 .topnav {
-    overflow: hidden;
+    height: 80px;
+    line-height: 80px;
     background-color: #333;
 }
 
@@ -27,8 +28,7 @@ body {
 /* Style the topnav links */
 
 .topnav a {
-    float: left;
-    display: block;
+    height: 30px;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -100,6 +100,9 @@ body {
 
 
 /* Rainbow stuff */
+
+
+/* <div class='demo rainbow-bg'></div> */
 
 .demo {
     width: 1920px;
@@ -211,4 +214,64 @@ body {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+}
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 30px;
+    color: black;
+}
+
+.container {
+    padding: 4px;
+    position: relative;
+}
+
+.gallery {
+    border: 1px solid #ccc;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

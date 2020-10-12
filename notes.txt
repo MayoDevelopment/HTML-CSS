@@ -1,0 +1,5 @@
+How to properly name files:
+no spaces, use a dash or something
+give them a name that represents their function
+
+sticky position property
