@@ -2,4 +2,5 @@ How to properly name files:
 no spaces, use a dash or something
 give them a name that represents their function
 
-sticky position property
+sticky position property:
+will stay in place until it is scrolled past, then will remain at the top of the screen
