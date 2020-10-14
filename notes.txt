@@ -4,3 +4,5 @@ give them a name that represents their function
 
 sticky position property:
 will stay in place until it is scrolled past, then will remain at the top of the screen
+
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
