@@ -7,6 +7,22 @@ body {
 }
 
 
+/* defaults for all images */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* paragraph parameters */
+
+p {
+    float: none;
+    padding-bottom: 10px;
+}
+
+
 /* Style the header */
 
 .header {
@@ -59,14 +75,23 @@ body {
 /* Left and right column */
 
 .side {
+    width: 40%;
+}
+
+
+/* side image parameters */
+
+.sideimg {
     width: 50%;
+    padding-right: 10px;
+    float: left;
 }
 
 
 /* Middle column */
 
 .middle {
-    width: 50%;
+    width: 60%;
 }
 
 
@@ -97,6 +122,9 @@ body {
     text-align: center;
 }
 
+
+/* button for the navbar links */
+
 .button {
     border-radius: 4px;
     background-color: #5f5f5f;
@@ -111,6 +139,9 @@ body {
     margin: 5px;
 }
 
+
+/* puts text at the top left of the conainers */
+
 .topleft {
     position: absolute;
     top: 8px;
@@ -119,23 +150,38 @@ body {
     color: black;
 }
 
+
+/* allows for positioning text on top of images */
+
 .container {
     padding: 4px;
     position: relative;
 }
 
+
+/* the item for containing images and descriptions in the gallery page */
+
 .gallery {
     border: 1px solid #ccc;
 }
+
+
+/* puts a shadow behind gallery items when the cursor hovers overthem */
 
 .gallery:hover {
     border: 1px solid #777;
 }
 
+
+/* sets image defaults for gallery images */
+
 .gallery img {
     width: 100%;
     height: 200%;
 }
+
+
+/* the description box for gallery items */
 
 .desc {
     padding: 15px;
@@ -144,11 +190,17 @@ body {
     font-size: larger;
 }
 
+
+/* default gallery item sizes */
+
 .responsive {
     padding: 0 6px;
     float: left;
     width: 33.333%;
 }
+
+
+/* gallery resize defaults at 1000px wide screen */
 
 @media only screen and (max-width: 1000px) {
     .responsive {
@@ -156,6 +208,9 @@ body {
         margin: 6px 0;
     }
 }
+
+
+/* gallery resize defaults at 600px wide screen */
 
 @media only screen and (max-width: 600px) {
     .responsive {
@@ -168,11 +223,3 @@ body {
     display: table;
     clear: both;
 }
-
-
-/*
-.img {
-    width: 100%;
-    height: auto;
-}
-*/
