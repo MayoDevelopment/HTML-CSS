@@ -223,3 +223,7 @@ p {
     display: table;
     clear: both;
 }
+
+.full {
+    width: 100%;
+}
