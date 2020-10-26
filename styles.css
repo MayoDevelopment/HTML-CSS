@@ -227,3 +227,101 @@ p {
 .full {
     width: 100%;
 }
+
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+
+th {
+    width: 10%;
+    text-align: left;
+}
+
+table {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 970px),
+(min-device-width: 970px) and (max-device-width: 1080px) {
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    /*
+	Label the data
+	*/
+    td:nth-of-type(1):before {
+        content: "Aircraft";
+    }
+    td:nth-of-type(2):before {
+        content: "Ceiling";
+    }
+    td:nth-of-type(3):before {
+        content: "Max Speed";
+    }
+    td:nth-of-type(4):before {
+        content: "Max Thrust";
+    }
+    td:nth-of-type(5):before {
+        content: "Year";
+    }
+    td:nth-of-type(6):before {
+        content: "Cost";
+    }
+    td:nth-of-type(7):before {
+        content: "Company";
+    }
+}
+
+.form-control {
+    border: 1px solid black;
+}
+
+#TextBox {
+    height: 300px;
+}
+
+label {
+    width: 200px;
+    font-weight: bold;
+    display: block;
+}
+
+form {
+    width: 200px;
+    margin: 0 auto;
+}

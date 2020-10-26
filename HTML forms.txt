@@ -1,0 +1,2 @@
+HTML forms are essentially a virtual form. They have several controls (labels, checkboxes, etc.) that take
+user inputs to fill in the data. These forms are usually filled, then sent to an agent (web server, mail sever, etc.)
