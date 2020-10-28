@@ -17,7 +17,7 @@ img {
 
 /* paragraph parameters */
 
-p {
+.p {
     float: none;
     padding-bottom: 10px;
 }
@@ -40,6 +40,7 @@ p {
     background-color: #333;
     position: sticky;
     top: 0px;
+    z-index: 9999;
 }
 
 
@@ -238,10 +239,16 @@ and also iPads specifically.
 th {
     width: 10%;
     text-align: left;
+    border: black 2px solid;
 }
 
 table {
     margin: 0 auto;
+    border: black 2px solid;
+}
+
+td {
+    border: black 1px solid;
 }
 
 @media only screen and (max-width: 970px),
@@ -309,19 +316,38 @@ table {
 
 .form-control {
     border: 1px solid black;
+    width: 100%;
 }
 
 #TextBox {
     height: 300px;
+    width: 100%;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+.label {
+    width: 200px;
+    display: block;
 }
 
 label {
-    width: 200px;
     font-weight: bold;
-    display: block;
 }
 
 form {
     width: 200px;
     margin: 0 auto;
+    padding: 0px 3px;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+#button {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.formdiv {
+    padding-top: 5px;
 }
