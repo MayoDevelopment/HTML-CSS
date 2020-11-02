@@ -16,44 +16,52 @@
     </div>
     <!-- navigation under the title -->
     <nav class="topnav">
-        <a class="button" href="home.html">Home</a>
-        <a class="button" href="gallery.html">Gallery</a>
-        <a class="button" href="specs.html">Specs</a>
-        <a class="button" href="about.html">About</a>
+        <a href="home.html" class="btn btn-default btn-xl active" role="button">Home</a>
+        <a href="gallery.html" class="btn btn-default btn-xl active" role="button">Gallery</a>
+        <a href="specs.html" class="btn btn-default btn-xl active" role="button">Specs</a>
+        <a href="about.html" class="btn btn-default btn-xl active" role="button">About</a>
     </nav>
     <form>
-        <div class="formdiv">
-            <label for="FirstName" class="label">First Name: </label>
-            <input type="text" id="FirstName" name="FirstName" class="form-control">
-            <label for="LastName" class="label">Last Name: </label>
-            <input type="text" id="LastName" name="LastName" class="form-control">
-            <label for="Email">Email: </label>
-            <input type="email" id="Email" name="Email" class="form-control">
-            <label for="PhoneNumber">Phone Number: </label>
-            <input type="email" id="PhoneNumber" name="PhoneNumber" class="form-control">
-            <label for="Date"> Date: </label>
-            <input type="date" id="Date" name="Date" class="form-control">
+        <div class="form_sidebyside">
+            <label>First Name:</label>
+            <input type="text" class="form-control" placeholder="First Name">
+        </div>
+        <div class="form_sidebyside">
+            <label>Last Name:</label>
+            <input type="text" class="form-control" placeholder="Last Name">
         </div>
         <div class="formdiv">
-            <label class="label">Preffered Communication:</label>
-            <input type="checkbox" id="CheckPhone" name="CheckPhone" style="display: inline-block;">
-            <label for="CheckPhone">Phone</label>
-            <input type="checkbox" id="CheckEmail" name="CheckEmail" style="display: inline-block;">
-            <label for="CheckEmail">Email</label>
+            <label>Email:</label>
+            <input type="email" class="form-control" placeholder="example@email.com">
         </div>
         <div class="formdiv">
-            <label class="label">Subscribe for updates:</label>
-            <label for="updates">Yes:</label>
-            <input type="radio" id="updates" name="updates" value="True">
-            <label for="updates">No:</label>
-            <input type="radio" id="updates" name="updates" value="False">
+            <label>Phone:</label>
+            <input type="tel" class="form-control" placeholder="XXX-XXX-XXXX">
         </div>
         <div class="formdiv">
-            <label for="TextBox" class="label">Comments:</label>
-            <textarea type="text" id="TextBox" name="TextBox"></textarea>
+            <Label>Contact Method: </Label>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="contactPhone" value="contactPhone"> <b>Phone</b>
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="contactEmail" value="contactEmail"><b>Email</b> 
+            </label>
         </div>
-        <div class="formdiv" style="padding-bottom: 3px;">
-            <input type="submit" id="button" value="Submit">
+        <div class="formdiv">
+            <label>Subscribe: </label>
+            <label class="radio-inline">
+                <input type="radio" name="subscribe" id="inlineRadio1" value="subyes"><b>Yes</b>
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="subscribe" id="inlineRadio1" value="subno"><b>No</b>
+            </label>
+        </div>
+        <div class="formdiv">
+            <label>Comments, Questions, or Concerns:</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <div class="formdiv">
+            <input class="btn btn-default" type="submit" value="Submit">
         </div>
     </form>
 </body>

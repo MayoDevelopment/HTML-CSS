@@ -54,6 +54,21 @@ img {
     text-decoration: none;
 }
 
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default {
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+    font-size: x-large;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 5px;
+    background-color: #535353;
+    border-color: #2b2b2b;
+    color: #fff;
+}
+
 
 /* Change color on hover */
 
@@ -76,7 +91,7 @@ img {
 /* Left and right column */
 
 .side {
-    width: 40%;
+    width: 39%;
 }
 
 
@@ -92,6 +107,7 @@ img {
 /* Middle column */
 
 .middle {
+    margin-left: 10px;
     width: 60%;
 }
 
@@ -138,6 +154,15 @@ img {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+}
+
+
+/* default buttons */
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #000000;
 }
 
 
@@ -336,9 +361,9 @@ label {
 }
 
 form {
-    width: 200px;
+    width: 500px;
     margin: 0 auto;
-    padding: 0px 3px;
+    padding: 3px;
     border: black 2px solid;
     border-radius: 10px;
 }
@@ -350,4 +375,9 @@ form {
 
 .formdiv {
     padding-top: 5px;
+}
+
+.form_sidebyside {
+    display: inline-block;
+    width: 49.5%;
 }
