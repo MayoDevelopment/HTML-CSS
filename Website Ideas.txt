@@ -1,5 +1,0 @@
-Website Ideas:
-Make the home page the top five aircrafts based on user votes
-Make a table for each supported aircraft, which can be swapped with the picture or vice versa
-Make the gallery have one aircraft per page, then you can pull a different one up and have the other one dissappear
-Make a specs tab that is one large chart with the basics (max alt, max speed, thrust, cost, year, etc) for all the aircrafts supported
