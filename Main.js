@@ -115,3 +115,16 @@ function equalsTest(num) {
     console.log("The value is equal: " + (num == "5"));
     console.log("The value and type are the same: " + (num === "5"));
 }
+
+function fizzbuzz() {
+    for (let x = 1; x <= 100; x++) {
+        switch (x) {
+            case (x % 3 == 0):
+                console.log("Fizz");
+            case (x % 5 == 0):
+                console.log("Buzz");
+            case !(x % 3 == 0) && !(x % 5 == 0):
+                console.log(x);
+        }
+    }
+}
